@@ -2,4 +2,10 @@
 {% block body %}
 <h1>Home</h1>
 <p>This is home.</p>
+
+<form action="/desc" method="POST">
+ <input type="textarea" name="description">
+ <input type="submit" value="Submit">
+</form>
+
 {% endblock %}
