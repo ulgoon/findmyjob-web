@@ -2,11 +2,15 @@
 {% block body %}
 
 <div class="uk-grid fw-container-full">
- <div class="uk-width-1-1">
-  <h1>Result</h1>
+ <div class="uk-width-1-1" id="result-area">
 
   <script>
-  var result_data = {{ responses | safe }}
+   var result_data = {{ responses | safe }};
+  </script>
+  <script>
+   d3.select('#result-area')
+    .append('h1')
+    .text('Result');
   </script>
  </div>
 </div>
